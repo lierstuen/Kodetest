@@ -1,0 +1,61 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "postinstall": "npm run download-webviewer",
+    "download-webviewer": "npx @pdftron/webviewer-downloader"
+  },
+  "dependencies": {
+    "@jeremyhamm/vue-slider": "^0.2.0",
+    "@lazy-copilot/datetimepicker": "^0.1.50",
+    "axios": "^0.21.1",
+    "core-js": "^3.9.0",
+    "i": "^0.3.6",
+    "jquery": "^3.5.1",
+    "laue": "^0.2.1",
+    "material-design-icons-iconfont": "^6.1.0",
+    "moment": "^2.29.1",
+    "npm": "^7.5.4",
+    "popper.js": "^1.16.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.1",
+    "vuetify": "^2.4.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^5.0.1",
+    "@vue/cli-service": "^5.0.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.1.0",
+    "vue-template-compiler": "^2.6.11",
+    "vueify": "^2.0.1",
+    "vuetify-loader": "^1.7.2",
+    "webpack": "^5.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
